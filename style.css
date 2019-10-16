@@ -1,4 +1,5 @@
 body {
+    background: skyblue;
     background: url('./resources/wallpaper.jpg');
     background-position: center;
     background-size: cover;
