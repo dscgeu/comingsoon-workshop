@@ -1,0 +1,56 @@
+body {
+    background: url('./resources/wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:  no-repeat;
+    overflow: hidden;
+    min-height:100vh;   
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+}
+
+
+.top, .bottom{ 
+    font-size: 60px;
+    color: #000;
+    text-align: center;
+}
+
+#main-content{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+#main-content h1{
+    margin:0 !important;
+}
+
+.bottom {
+    margin-bottom: 40px;
+}
+
+
+.bottom h1 .time{
+    padding:1%;
+    background:red;
+    color:#fff;
+    animation: bgchange 5s linear 2s infinite alternate;
+
+}
+
+
+
+/* media query at the end */
+@media screen and (max-width: 600px) {
+    .top, .bottom {
+      font-size:40px;
+    }
+  } 
+  @keyframes bgchange {
+    0%   {background-color: royalblue;}
+    50%  {background-color: rgb(20, 138, 235);}
+    100% {background-color: silver;}
+  }
